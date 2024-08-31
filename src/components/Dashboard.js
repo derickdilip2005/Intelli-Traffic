@@ -1,12 +1,12 @@
 import React from 'react';
 import './Dashboard.css';
 import LineGraph from './LineGraph';
-
+import TrafficMap from './TrafficMap';
 
 function Dashboard() {
   return (
     <div className="dashboard">
-      <div className="traffic-map"><b>Traffic Flow Map</b></div>
+      <div className="traffic-map"><center><b>Traffic Flow Map</b> </center><TrafficMap /> </div>
       <div className="key-metrics">
         <div className="card"><b>Overall Traffic Density</b></div>
         <div className="card"><b>Average Wait Time</b></div>
@@ -18,7 +18,7 @@ function Dashboard() {
       </div>
       <div className="graphs-cameras">
         <div className="real-time-graphs">
-          <LineGraph /> {/* Real-Time Line Graph */}
+          <LineGraph /> 
         </div>
       </div>
     </div>

@@ -73,3 +73,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .traffic-map {
+    height: 400px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  

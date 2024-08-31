@@ -1,15 +1,15 @@
 import React from 'react';
 import './Sidebar.css';
 
-function Sidebar() {
+function Sidebar({ onOptionClick }) {
   return (
     <aside className="sidebar">
       <ul>
-        <li>Dashboard Overview</li>
-        <li>Traffic Monitoring</li>
-        <li>Violations</li>
-        <li>Emergency Alerts</li>
-        <li>Settings</li>
+        <li onClick={() => onOptionClick('dashboard')}>Dashboard Overview</li>
+        <li onClick={() => onOptionClick('traffic-monitoring')}>Traffic Monitoring</li>
+        <li onClick={() => onOptionClick('violations')}>Violations</li>
+        <li onClick={() => onOptionClick('emergency-alerts')}>Emergency Alerts</li>
+        <li onClick={() => onOptionClick('settings')}>Settings</li>
       </ul>
     </aside>
   );

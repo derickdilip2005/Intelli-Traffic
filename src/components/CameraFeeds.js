@@ -11,7 +11,7 @@ function CameraFeeds() {
 
   return (
     <div>
-      <h2>Camera Feeds</h2>
+      <center><h2>Camera Feeds</h2></center>
       <div className="camera-feeds">
         {videoFiles.map((videoSrc, index) => (
           <div key={index} className="feed">

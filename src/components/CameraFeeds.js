@@ -1,44 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CameraFeeds.css';
 
 function CameraFeeds() {
-  const [videos, setVideos] = useState([null, null, null, null]);
-
-  const handleVideoUpload = (index, event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const videoUrl = URL.createObjectURL(file);
-      const updatedVideos = [...videos];
-      updatedVideos[index] = videoUrl;
-      setVideos(updatedVideos);
-    }
-  };
+  const videoFiles = [
+    '/videos/clip 1.mp4',
+    '/videos/clip 2.mp4',
+    '/videos/clip 3.mp4',
+    '/videos/clip 4.mp4',
+  ];
 
   return (
     <div>
-    <center><h2>Camera Feeds</h2></center>
-        <div className="camera-feeds">
-        {videos.map((video, index) => (
-            <div key={index} className="feed">
+      <h2>Camera Feeds</h2>
+      <div className="camera-feeds">
+        {videoFiles.map((videoSrc, index) => (
+          <div key={index} className="feed">
             <h3>Route {index + 1}</h3>
-            {video ? (
-                <video controls src={video} autoPlay loop muted />
-            ) : (
-                <div className="upload-container">
-                <label htmlFor={`upload-${index}`} className="upload-label">
-                    Upload Video
-                </label>
-                <input
-                    type="file"
-                    id={`upload-${index}`}
-                    accept="video/*"
-                    onChange={(event) => handleVideoUpload(index, event)}
-                />
-                </div>
-            )}
-            </div>
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              src={videoSrc} 
+              className="video-player"
+            />
+          </div>
         ))}
-        </div>
+      </div>
     </div>
   );
 }

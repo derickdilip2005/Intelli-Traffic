@@ -7,8 +7,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 37.7749, // Latitude of the center point
-  lng: -122.4194, // Longitude of the center point
+  lat: 13.0827, 
+  lng: 80.2707
 };
 
 function TrafficMap() {

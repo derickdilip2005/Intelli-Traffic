@@ -1,0 +1,88 @@
+/* Default light theme */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark theme */
+  body.dark {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .settings-pane {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark .settings-pane {
+    background-color: #333333;
+  }
+  
+  .settings-pane h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  body.dark .settings-pane h2 {
+    color: #ffffff;
+  }
+  
+  .settings-option {
+    margin-bottom: 30px;
+  }
+  
+  .settings-option h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  body.dark .settings-option h3 {
+    color: #cccccc;
+  }
+  
+  .settings-option p,
+  .settings-option ul {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  body.dark .settings-option p,
+  body.dark .settings-option ul {
+    color: #bbbbbb;
+  }
+  
+  .settings-option ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d9d9d9;
+  }
+  
+  body.dark button:hover {
+    background-color: #555555;
+  }
+  
+  .logout-button {
+    background-color: #ff4c4c;
+    color: white;
+  }
+  
+  .logout-button:hover {
+    background-color: #e60000;
+  }
+  

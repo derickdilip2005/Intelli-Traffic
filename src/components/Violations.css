@@ -1,0 +1,121 @@
+.violations-pane {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px; /* Add space between the boxes */
+    margin-left: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.violations-pane h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Common styles for each section box */
+.section-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Section */
+.summary-section {
+    margin-bottom: 30px;
+}
+
+/* Category Section */
+.category-section p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Statistics Section */
+.statistics-section {
+    margin-bottom: 30px;
+    flex: 2;
+    width: 60%;
+}
+
+.chart-container {
+    width: 100%;
+    height: 300px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.chart-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Alerts Section */
+.alerts-section {
+    margin-bottom: 30px;
+}
+
+.alerts-section ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.alert-button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert-button:hover {
+    background-color: #e60000;
+}
+
+/* Reporting Section */
+.reporting-section {
+    margin-bottom: 30px;
+}
+
+.reporting-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reporting-section label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.reporting-section select, 
+.reporting-section input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.report-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-button:hover {
+    background-color: #45a049;
+}

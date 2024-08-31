@@ -1,0 +1,42 @@
+.camera-feeds {
+    display: grid;
+    width: 450px ;
+    margin-right: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .feed {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-label {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  

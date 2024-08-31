@@ -1,0 +1,75 @@
+.dashboard {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .traffic-map {
+    height: 200px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+  }
+  
+  .key-metrics {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .card:last-child {
+    margin-right: 0;
+  }
+  
+  .controls-alerts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .traffic-light-controls,
+  .violation-alerts {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .violation-alerts {
+    margin-right: 0;
+  }
+  
+  .graphs-cameras {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .real-time-graphs,
+  .camera-feeds {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .camera-feeds {
+    margin-right: 0;
+  }
+  
+.real-time-graphs {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

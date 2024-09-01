@@ -13,7 +13,7 @@ const center = {
 
 function TrafficMap() {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDTV971ltHJrKhwhLMloD7cmTvWxxjJKZ8">
+    <LoadScript googleMapsApiKey="AIzaSyCt7nyriIsUVOT8kcc3T00eVI-osjH4dEU">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

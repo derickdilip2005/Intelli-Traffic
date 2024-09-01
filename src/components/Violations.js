@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Violations.css';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
@@ -7,6 +7,16 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 function Violations() {
+  const [reportMessage, setReportMessage] = useState('');
+
+  const handleReportSubmit = (event) => {
+    event.preventDefault();
+    setReportMessage('Reported vehicle');
+    setTimeout(() => {
+      setReportMessage('');
+    }, 3000); // The message will disappear after 3 seconds
+  };
+
   // Data for the chart
   const data = {
     labels: ['1:30 PM - 2:00 PM', '2:00 PM - 2:30 PM', '2:30 PM - 3:00 PM', '3:00 PM - 3:30 PM'],
@@ -42,6 +52,8 @@ function Violations() {
 
   return (
     <div className="violations-pane">
+      {reportMessage && <div className="report-message">{reportMessage}</div>}
+      
       <div className="section-box summary-section">
         <h2>Traffic Violations Summary</h2>
         <p>Total Violations Detected: <b>120</b></p>
@@ -70,7 +82,7 @@ function Violations() {
 
       <div className="section-box reporting-section">
         <h2>Manual Reporting</h2>
-        <form>
+        <form onSubmit={handleReportSubmit}>
           <label>
             Violation Type:
             <select>
